@@ -1,0 +1,35 @@
+switch (operation)
+            {
+                case '+': 
+                    Console.WriteLine("Kết quả phép tính {0}+{1}={2}", x, y, x + y);
+                    break;
+                case '-': 
+                    Console.WriteLine("Kết quả phép tính {0}-{1}={2}", x, y, x - y);
+                    break;
+                case '*': 
+                    Console.WriteLine("Kết quả phép tính {0}*{1}={2}", x, y, x * y);
+                    break;
+                case '/':
+                    if (y == 0)
+                    {
+                        Console.WriteLine("Không thể chia cho 0");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Kết quả phép tính {0}/{1}={2}", x, y, x / y);
+                    }
+                    break;
+                case '%':
+                    if (y == 0)
+                    {
+                        Console.WriteLine("Không thể chia cho 0");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Kết quả phép tính {0} chia {1} dư {2}", x, y, x % y);
+                    }
+                    break;
+                default: 
+                    Console.WriteLine("Không phải phép tính");
+                    break;
+            }
